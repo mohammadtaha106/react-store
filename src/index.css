@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.playfair_font{
+    font-family: "Playfair Display", serif;
+    }
