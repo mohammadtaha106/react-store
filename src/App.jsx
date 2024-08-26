@@ -40,6 +40,18 @@ function App() {
 
     <p className='text-6xl text-blue-800  mb-6 playfair_font'>React Store App</p>
       <div className="p-4 max-w-2xl mx-auto">
+
+      <div className="mb-6">
+          <h2 className="text-xl font-semibold text-gray-800 mb-2">Search by Category</h2>
+          <input
+            type="search"
+            placeholder="Enter category to search"
+            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            onChange={(e) => setProductSearch(e.target.value)}
+          />
+        </div>
+
+        
         <div className="mb-6">
           <h2 className="text-xl font-semibold text-gray-800 mb-2">Search by Price</h2>
           <input
@@ -50,15 +62,7 @@ function App() {
           />
         </div>
 
-        <div className="mb-6">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">Search by Category</h2>
-          <input
-            type="search"
-            placeholder="Enter category to search"
-            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            onChange={(e) => setProductSearch(e.target.value)}
-          />
-        </div>
+       
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
